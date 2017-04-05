@@ -1,5 +1,7 @@
 # optionsoup
 
+[![Build Status](https://travis-ci.org/AtenDesignGroup/optionsoup.svg?branch=master)](https://travis-ci.org/AtenDesignGroup/optionsoup)
+
 ```javascript
 
 const optionsoup = require('optionsoup');
