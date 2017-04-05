@@ -16,10 +16,10 @@ const options = {
 };
 
 // will be 'http://my.example.com', but would default to 'http://example.com' if that didn't exist...
-const url = optionsoup(options, 'settings.url', 'http://example.com');
+const url = optionsoup.get(options, 'settings.url', 'http://example.com');
 
 // will be "default" because the other two things don't exist...
-const allTheOptions = optionsoup(options, 'thing', optionsoup(options, 'anotherthing', 'default'));
+const allTheOptions = optionsoup.get(options, 'thing', optionsoup.get(options, 'anotherthing', 'default'));
 
-const oneOfTheOptions = optionsoup(options, 'things[0]');
+const oneOfTheOptions = optionsoup.get(options, 'things[0]');
 ```
